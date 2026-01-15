@@ -9,7 +9,7 @@ function TransactionForm({ onAdd }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://localhost:8000/api/transactions/", {
+    const res = await fetch("https://snapshot-backend.redsmoke-84e60bb6.eastus.azurecontainerapps.io/api/transactions/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
