@@ -8,7 +8,7 @@ function App() {
   const [transactions, setTransactions] = useState([]);
 
   const fetchTransactions = () => {
-    fetch("http://localhost:8000/api/transactions/", {
+    fetch("https://snapshot-backend.redsmoke-84e60bb6.eastus.azurecontainerapps.io/api/transactions/", {
       credentials: "include",
     })
       .then((res) => res.json())
@@ -16,7 +16,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/user/", {
+    fetch("https://snapshot-backend.redsmoke-84e60bb6.eastus.azurecontainerapps.io/api/user/", {
       credentials: "include",
     })
       .then((res) => res.ok ? res.json() : null)
@@ -47,7 +47,7 @@ function MyForm({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:8000/api/login/", {
+    const response = await fetch("https://snapshot-backend.redsmoke-84e60bb6.eastus.azurecontainerapps.io/api/login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function MyForm({ setUser }) {
     });
 
     if (response.ok) {
-      const userRes = await fetch("http://localhost:8000/api/user/", {
+      const userRes = await fetch("https://snapshot-backend.redsmoke-84e60bb6.eastus.azurecontainerapps.io/api/user/", {
         credentials: "include",
       });
       const userData = await userRes.json();
