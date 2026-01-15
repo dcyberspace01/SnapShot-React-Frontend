@@ -1,6 +1,6 @@
 export default function Navbar() {
   const handleLogout = async () => {
-    await fetch("http://localhost:8000/api/logout/", {
+    await fetch("https://snapshot-backend.redsmoke-84e60bb6.eastus.azurecontainerapps.io/api/logout/", {
       method: "POST",
       credentials: "include",
     });
