@@ -96,3 +96,10 @@ Transaction Page:
 
 <img width="1997" height="882" alt="image" src="https://github.com/user-attachments/assets/3bb47836-1afd-4b37-a943-05d7baf07392" />
 
+
+
+Sign-Up Page:
+
+<img width="1895" height="674" alt="image" src="https://github.com/user-attachments/assets/537bea5e-46a4-43ba-8ba7-9d395146d796" />
+
+
